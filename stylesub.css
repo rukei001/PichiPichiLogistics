@@ -1,0 +1,29 @@
+
+
+/* トップ画像 */
+.topimage {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+h2,
+p {
+  color: aliceblue;
+  text-align: center;
+}
+
+.poem{
+  text-align: center;
+}
+
+footer {
+  color: aliceblue;
+  margin: 300px auto;
+  text-align: center;
+}
+
+

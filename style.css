@@ -1,0 +1,172 @@
+/* ---index.html専用のCSSだよ--- */
+
+/* トップ画像 */
+.topimage {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+h2,
+p {
+  text-align: center;
+  color: aliceblue;
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+}
+
+.poem {
+  color: rgb(255, 255, 255);
+  margin: 32px auto;
+  letter-spacing: 0.12em;
+}
+
+.poem rt {
+  color: rgb(109, 109, 109);
+}
+
+section {
+  padding: 32px 20px;
+  background-color: rgba(9, 9, 9, 0.5);
+  border-radius: 16px;
+  margin: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* 影あんま意味ないかも */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+section+section {
+  margin-top: 32px;
+}
+
+
+main section>a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+
+  color: azure;
+  background-color: rgba(42, 51, 172, 0.5);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+main section>p {
+  font-weight: 200;
+  color: rgb(211, 211, 211);
+  line-height: 1.8;
+}
+
+.pic {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 64px auto;
+}
+
+/* お問い合わせセクション：mainE */
+.mainE {
+  margin-top: 80px;
+}
+
+.time{
+  font-size:small;
+  color:gray;
+}
+
+
+
+/* スクロール停止位置の調整 */
+#contact {
+  scroll-margin-top: 80px;
+}
+
+/* お問い合わせテーブル */
+table {
+  width: 100%;
+  max-width: 520px;
+  margin: 24px auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  border-spacing: 0;
+  overflow: hidden;
+
+  background-color: rgba(5, 5, 5, 0.55);
+}
+
+thead {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+th,
+td {
+  padding: 14px 18px;
+  color: rgb(220, 220, 220);
+}
+
+th {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+td {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+td:first-child {
+  width: 30%;
+  color: rgb(145, 145, 145);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+
+/* 末尾ロゴ画像 */
+.logoFull {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: 64px auto 0 auto;
+}
+
+
+footer {
+  color: rgb(132, 132, 132);
+  margin: 0 auto 32px auto;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .topimage {
+    height: 500px;
+    width: 100%;
+  }
+
+  .logoFull {
+    width: 500px;
+  }
+
+  section {
+    width: 800px;
+    margin: 16px auto;
+  }
+
+  .pic {
+    max-width: 800px;
+  }
+
+  main section>a:hover {
+    background-color: rgba(42, 51, 172, 0.8);
+  }
+}

@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(28, 28, 28);
+}
+
+/* ヘッダー装飾 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+
+  background-color: rgba(54, 54, 54, 0.5);
+
+  z-index: 1000;
+}
+
+.header-bar {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 16px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.pichi-header {
+  margin: 0;
+
+  color: white;
+  font-size: 20px;
+  white-space: nowrap;
+
+}
+
+.menu-button {
+  margin-left: auto;
+
+  color: white;
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+/* スマホでは通常ナビを隠す */
+nav {
+display: flex;
+
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+
+transform: translateY(-10px);
+transition:
+  opacity 0.25s ease,
+  transform 0.25s ease,
+  visibility 0.25s;
+
+  position: absolute;
+  top: 64px;
+  right: 0;
+
+  width: 200px;
+
+  flex-direction: column;
+
+  background-color: rgba(20, 20, 20, 0.75);
+}
+
+nav.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transform: translateY(0);
+}
+
+nav a {
+  padding: 16px 24px;
+
+  color: white;
+  text-decoration: none;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* PC表示 */
+
+@media (min-width: 768px) {
+
+  header {
+    height: 80px;
+  }
+
+  .header-bar {
+    padding: 0 32px;
+
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pichi-header {
+    font-size: 28px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  nav,
+  nav.open {
+    position: static;
+
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+    width: auto;
+    margin-left: auto;
+
+    background: none;
+
+        /* これがないとPC版で上部メニュー消えます */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+  }
+
+  nav a {
+    padding: 0;
+
+    color: white;
+    text-decoration: none;
+
+    border: none;
+  }
+}
