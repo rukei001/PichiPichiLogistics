@@ -75,7 +75,8 @@ section {
 }
 
 .section-image {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   object-fit: cover;
   display: block;
@@ -212,9 +213,10 @@ td:first-child {
     height: 500px;
     width: 100%;
   }
-  
+
   section {
-    width: 800px;
+    width: calc(100% - 32px);
+    max-width: 800px;
     margin: 16px auto;
   }
 }

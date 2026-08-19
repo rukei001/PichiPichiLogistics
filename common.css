@@ -133,7 +133,7 @@ footer {
 
 /* PC表示 */
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
   header {
     height: 80px;

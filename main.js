@@ -25,4 +25,14 @@ menuButton.addEventListener("click", () => {
     menuButton.setAttribute("aria-label", "メニューを開く");
   }
 });
+
+// スマホでお問い合わせを押すとメニューひらきっぱになる可能性があるので
+nav.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuIcon.textContent = "menu";
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "メニューを開く");
+  });
+});
 }
