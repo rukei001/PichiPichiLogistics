@@ -120,6 +120,11 @@ td:first-child {
   letter-spacing: 0.08em;
 }
 
+/* 押したぞ反応 */
+main section > a:active {
+  transform: scale(0.96);
+}
+
 /* 募集要項テーブル */
 .recruit-info th {
   background-color: rgb(35, 35, 35);

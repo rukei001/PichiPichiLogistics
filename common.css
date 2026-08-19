@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -66,17 +70,17 @@ header {
 
 /* スマホでは通常ナビを隠す */
 nav {
-display: flex;
+  display: flex;
 
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
-transform: translateY(-10px);
-transition:
-  opacity 0.25s ease,
-  transform 0.25s ease,
-  visibility 0.25s;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    visibility 0.25s;
 
   position: absolute;
   top: 64px;
@@ -115,7 +119,7 @@ nav a {
 }
 
 p {
-letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
 }
 
 .big-letter {
@@ -131,7 +135,7 @@ footer {
 }
 
 /* スクロール停止位置の調整 */
-#contact{
+#contact {
   scroll-margin-top: 80px;
 }
 
@@ -146,7 +150,36 @@ footer {
   }
 }
 
+.header-brand {
+  transition: opacity 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header-brand:hover {
+    opacity: 0.75;
+  }
+}
+
+.menu-button {
+  transition: opacity 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-button:hover {
+    opacity: 0.55;
+  }
+}
+
+
 /* PC表示 */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* マウスなど、ホバー可能な端末だけ */
+  nav a:hover {
+    opacity: 0.65;
+  }
+}
 
 @media (min-width: 1000px) {
 
@@ -165,8 +198,8 @@ footer {
   }
 
   p {
-  letter-spacing: 0.12em;
-}
+    letter-spacing: 0.12em;
+  }
 
   .pichi-header {
     font-size: 28px;
@@ -189,7 +222,7 @@ footer {
 
     background: none;
 
-        /* これがないとPC版で上部メニュー消えます */
+    /* これがないとPC版で上部メニュー消えます */
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
