@@ -212,21 +212,9 @@ td:first-child {
     height: 500px;
     width: 100%;
   }
-
-  .logoFull {
-    width: 500px;
-  }
-
+  
   section {
     width: 800px;
     margin: 16px auto;
-  }
-
-  .pic {
-    max-width: 800px;
-  }
-
-  main section>a:hover {
-    background-color: rgba(42, 51, 172, 0.8);
   }
 }
