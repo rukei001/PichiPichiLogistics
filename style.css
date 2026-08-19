@@ -131,15 +131,6 @@ td:first-child {
 }
 
 
-/* 末尾ロゴ画像 */
-.logoFull {
-  display: block;
-  width: 75%;
-  height: auto;
-  margin: 64px auto 0 auto;
-}
-
-
 footer {
   color: rgb(132, 132, 132);
   margin: 0 auto 32px auto;

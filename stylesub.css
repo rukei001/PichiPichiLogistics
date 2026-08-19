@@ -1,5 +1,3 @@
-
-
 /* トップ画像 */
 .topimage {
   height: 500px;
@@ -8,22 +6,170 @@
 }
 
 
-
-
 h2,
+h3,
 p {
   color: aliceblue;
   text-align: center;
 }
 
-.poem{
+h2 {
+  position: relative;
+  /*positionをrelativeに指定*/
+}
+
+h2::after {
+  position: absolute;
+  /*positionをabsoluteに指定*/
+  content: "";
+  background-color: rgb(80, 80, 81);
+  /*下線の色*/
+  width: 150px;
+  /*線の幅*/
+  height: 5px;
+  /*線の太さ*/
+  bottom: -12px;
+  /*線のタテ位置*/
+  left: 50%;
+  /*線のヨコ位置*/
+  transform: translateX(-50%);
+  /*線のヨコ位置*/
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.poem {
   text-align: center;
 }
 
-footer {
-  color: aliceblue;
-  margin: 300px auto;
-  text-align: center;
+section {
+  padding: 32px 20px;
+  background-color: rgba(9, 9, 9, 0.5);
+  border-radius: 16px;
+  margin: 32px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.section-image {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 12px auto;
+}
 
+/* 一日の流れテーブル */
+table {
+  width: 100%;
+  max-width: 520px;
+  margin: 24px auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  border-spacing: 0;
+  overflow: hidden;
+
+  background-color: rgba(5, 5, 5, 0.55);
+}
+
+thead {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+th,
+td {
+  padding: 14px 18px;
+  color: rgb(220, 220, 220);
+}
+
+th {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+td {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+td:first-child {
+  width: 30%;
+  color: rgb(145, 145, 145);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+/* 募集要項テーブル */
+.recruit-info th{
+  background-color: rgb(35, 35, 35);
+}
+
+/* 事業内容ページ　Q&A */
+.qa-list {
+  margin: 24px 0 0;
+}
+
+.qa-item {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.qa-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.qa-item dt,
+.qa-item dd {
+  position: relative;
+  margin: 0;
+  padding-left: 40px;
+}
+
+.qa-item dt {
+  color: white;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.qa-item dd {
+  margin-top: 14px;
+  color: rgb(190, 190, 190);
+  line-height: 1.8;
+}
+
+.qa-item dt::before,
+.qa-item dd::before {
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.qa-item dt::before {
+  content: "Q";
+  color: rgb(0, 26, 223);
+}
+
+.qa-item dd::before {
+  content: "A";
+  color: rgb(150, 150, 150);
+}
+
+/* 採用フロー */
+.flow {
+  list-style: none;
+  padding: 0;
+}
+
+.flow li {
+  text-align: center;
+  color:azure;
+}
+
+.flow li:not(:last-child)::after {
+  content: "↓";
+  display: block;
+  margin: 12px 0;
+}

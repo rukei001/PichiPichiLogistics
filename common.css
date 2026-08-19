@@ -106,6 +106,21 @@ nav a {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* 末尾ロゴ画像 */
+.logoFull {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: 64px auto 0 auto;
+}
+
+footer {
+  color: rgb(132, 132, 132);
+  margin: 0 auto 32px auto;
+  font-size: 12px;
+  text-align: center;
+}
+
 
 /* PC表示 */
 
