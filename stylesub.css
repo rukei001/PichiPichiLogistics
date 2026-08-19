@@ -167,7 +167,7 @@ td:first-child {
 
 .qa-item dt::before {
   content: "Q";
-  color: rgb(0, 26, 223);
+  color: rgb(223, 0, 0);
 }
 
 .qa-item dd::before {
