@@ -114,6 +114,10 @@ nav a {
   margin: 64px auto 0 auto;
 }
 
+p {
+letter-spacing: 0.05em;
+}
+
 footer {
   color: rgb(132, 132, 132);
   margin: 0 auto 32px auto;
@@ -148,6 +152,10 @@ footer {
     width: 60px;
     height: 60px;
   }
+
+  p {
+  letter-spacing: 0.12em;
+}
 
   .pichi-header {
     font-size: 28px;
