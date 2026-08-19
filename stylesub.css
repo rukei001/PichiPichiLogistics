@@ -13,6 +13,28 @@ p {
   text-align: center;
 }
 
+p {
+  max-width:80%;
+  margin: 32px auto;
+  letter-spacing: 0.12em;
+}
+
+.big-letter{
+  font-weight: bold;
+  color:white;
+}
+
+#sengyo{
+  font-weight: bold;
+  color:red;
+}
+
+.notice{
+  font-size: small;
+  color: gray;
+}
+
+
 h2 {
   position: relative;
   /*positionをrelativeに指定*/
