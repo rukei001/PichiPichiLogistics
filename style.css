@@ -81,13 +81,6 @@ main section>p {
   color:gray;
 }
 
-
-
-/* スクロール停止位置の調整 */
-#contact {
-  scroll-margin-top: 80px;
-}
-
 /* お問い合わせテーブル */
 table {
   width: 100%;

@@ -121,6 +121,15 @@ footer {
   text-align: center;
 }
 
+/* スクロール停止位置の調整 */
+#contact{
+  scroll-margin-top: 80px;
+}
+
+#access {
+  scroll-margin-top: 80px;
+}
+
 
 /* PC表示 */
 
