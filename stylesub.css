@@ -1,7 +1,7 @@
 /* トップ画像 */
 .topimage {
-  height: 500px;
   width: 100%;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -14,22 +14,22 @@ p {
 }
 
 p {
-  max-width:80%;
+  max-width: 80%;
   margin: 32px auto;
   letter-spacing: 0.12em;
 }
 
-.big-letter{
+.big-letter {
   font-weight: bold;
-  color:white;
+  color: white;
 }
 
-#sengyo{
+#sengyo {
   font-weight: bold;
-  color:red;
+  color: red;
 }
 
-.notice{
+.notice {
   font-size: small;
   color: gray;
 }
@@ -125,7 +125,7 @@ td:first-child {
 }
 
 /* 募集要項テーブル */
-.recruit-info th{
+.recruit-info th {
   background-color: rgb(35, 35, 35);
 }
 
@@ -187,7 +187,7 @@ td:first-child {
 
 .flow li {
   text-align: center;
-  color:azure;
+  color: azure;
 }
 
 .flow li:not(:last-child)::after {
@@ -197,11 +197,36 @@ td:first-child {
 }
 
 /* 会社アクセス */
-.location{
+.location {
   display: block;
   width: 100%;
   height: 320px;
   margin: 24px auto;
   border: 0;
   border-radius: 12px;
+}
+
+/* pc画面用 */
+@media (min-width: 768px) {
+  .topimage {
+    height: 500px;
+    width: 100%;
+  }
+
+  .logoFull {
+    width: 500px;
+  }
+
+  section {
+    width: 800px;
+    margin: 16px auto;
+  }
+
+  .pic {
+    max-width: 800px;
+  }
+
+  main section>a:hover {
+    background-color: rgba(42, 51, 172, 0.8);
+  }
 }
